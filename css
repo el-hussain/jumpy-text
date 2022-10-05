@@ -1,0 +1,34 @@
+@import url('https//fonts.googleapis.com/navigation.css? family=montserrat:wght@800&display=swap');
+
+
+
+body{
+    background: #1a1a1a;
+}
+.loader{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    margin: 50px auto;
+    width: 300px;
+    float: center;
+}
+.loader div{
+    height: 20px;
+    width: 100%;
+    margin: 0 2px;
+    text-align: center;
+    background: green;
+    text-transform: uppercase;
+    color: white;
+    font-family: 'montserrat', sans-serif;
+    animation: 2s infinite jumpy ;
+}
+.laoder div:nth-child(even){
+    animation-delay: .1s;
+
+}
+@keyframes jumpy {
+50% {height: 50px; background: linear-gradient(green,white,green)}
+}
